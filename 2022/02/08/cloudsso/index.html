@@ -1,0 +1,281 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Multiple Accounts with CloudSSO Solution | Cheng's Blog</title><meta name="keywords" content="SSO,CloudSSO"><meta name="author" content="Cheng Zhang"><meta name="copyright" content="Cheng Zhang"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="CloudSSO simplify users management of multiple cloud accounts for enterprise Why CloudSSOFor enterprise customers, a simple cloud account is really hard to support complex structure of organization.St">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Multiple Accounts with CloudSSO Solution">
+<meta property="og:url" content="https://blog.mucdata.com/2022/02/08/cloudsso/index.html">
+<meta property="og:site_name" content="Cheng&#39;s Blog">
+<meta property="og:description" content="CloudSSO simplify users management of multiple cloud accounts for enterprise Why CloudSSOFor enterprise customers, a simple cloud account is really hard to support complex structure of organization.St">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://blog.mucdata.com/img/default_bg.png">
+<meta property="article:published_time" content="2022-02-08T18:00:00.000Z">
+<meta property="article:modified_time" content="2022-02-08T17:28:04.215Z">
+<meta property="article:author" content="Cheng Zhang">
+<meta property="article:tag" content="SSO">
+<meta property="article:tag" content="IdP">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://blog.mucdata.com/img/default_bg.png"><link rel="shortcut icon" href="/img/favicon.ico"><link rel="canonical" href="https://blog.mucdata.com/2022/02/08/cloudsso/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//www.google-analytics.com" crossorigin=""/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-149467267-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-149467267-1');
+</script><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Multiple Accounts with CloudSSO Solution',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-02-08 18:28:04'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if (GLOBAL_CONFIG_SITE.isHome && /iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 5.4.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">5</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">Tags</div><div class="length-num">12</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">Categories</div><div class="length-num">4</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/img/default_bg.png')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Cheng's Blog</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Multiple Accounts with CloudSSO Solution</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2022-02-08T18:00:00.000Z" title="Created 2022-02-08 19:00:00">2022-02-08</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2022-02-08T17:28:04.215Z" title="Updated 2022-02-08 18:28:04">2022-02-08</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/SSO/">SSO</a></span></div><div class="meta-secondline"></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="CloudSSO-simplify-users-management-of-multiple-cloud-accounts-for-enterprise"><a href="#CloudSSO-simplify-users-management-of-multiple-cloud-accounts-for-enterprise" class="headerlink" title="CloudSSO simplify users management of multiple cloud accounts for enterprise"></a>CloudSSO simplify users management of multiple cloud accounts for enterprise</h1><hr>
+<h1 id="Why-CloudSSO"><a href="#Why-CloudSSO" class="headerlink" title="Why CloudSSO"></a>Why CloudSSO</h1><p>For enterprise customers, a simple cloud account is really hard to support complex structure of organization.<br>Strict isolation policy between projects or departments means that multiple cloud accounts within the same enterprise account is required.<br>Enterprise services of Alibaba Cloud <code>Resource Directory</code> in <code>Resource Management</code> can support a root enterprise account with sub accounts according to organization hierarchy or projects.<br>With <code>Resource Directory</code> customers can manage member account manually, however this way is not efficient and difficult to maintain.<br>A centralized tool which can manage access permission of enterprise users to sub cloud accounts is required. Additionally SSO login with enterprise identity provider should be supported by the tool.</p>
+<h1 id="What-is-CloudSSO"><a href="#What-is-CloudSSO" class="headerlink" title="What is CloudSSO"></a>What is CloudSSO</h1><p><code>CloudSSO</code> is integrated with Alibaba Cloud <code>Resource Directory</code> to provide centralized multi-account identity management and access control.<br>You can use <code>CloudSSO</code> to manage enterprise users who need to access Alibaba Cloud resources and assign access permissions on the accounts<br>in a resource directory to the users in a centralized manner.<br>You can also configure settings only once to implement single sign-on (SSO) access to Alibaba Cloud resources from an identity provider (IdP).<br>Refer to <a target="_blank" rel="noopener" href="https://www.alibabacloud.com/help/en/doc-detail/265930.html">CloudSSO</a>.</p>
+<h2 id="Resource-Management"><a href="#Resource-Management" class="headerlink" title="Resource Management"></a>Resource Management</h2><p>Resource Management allows you to build an organizational structure for resources based on your business requirements.<br>You can use resource directories, resource groups, or tags to hierarchically organize and manage your cloud resources.<br>Refer to <a target="_blank" rel="noopener" href="https://www.alibabacloud.com/help/doc-detail/200506.htm">Resource Directory</a>.</p>
+<p><img src="resource_directory.png"></p>
+<ul>
+<li>A folder is an organizational unit in a resource directory. A folder may indicate a branch, line of business, or project of an enterprise. Each folder can contain members and subfolders, which forms a tree-shaped organizational structure.</li>
+<li>A member serves as a container for resources and is also an organizational unit in a resource directory. A member indicates a project or application. The resources of different members are isolated. You can use a management account to grant the required permissions to a RAM user or RAM role and use this RAM user or RAM role to log on to or access members.</li>
+</ul>
+<h3 id="Terraform"><a href="#Terraform" class="headerlink" title="Terraform"></a>Terraform</h3><p>Alibaba Cloud <code>Resource Management</code> supports terraform, please visit<br><a target="_blank" rel="noopener" href="https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/resources/resource_manager_account">Resource Management with Terraform</a></p>
+<h2 id="What-is-Resource-Access-Management-RAM"><a href="#What-is-Resource-Access-Management-RAM" class="headerlink" title="What is Resource Access Management(RAM)"></a>What is Resource Access Management(RAM)</h2><p>Alibaba Cloud <code>Resource Access Management(RAM)</code> is an identity and access control service which enables you to centrally manage your users (including employees,<br>systems or applications) and securely control their access to your resources through permission levels.<br>RAM thereby allows you to securely grant access permissions for Alibaba Cloud resources to only your selected high-privileged users, enterprise personnel and partners.<br>This helps to ensure secure and appropriate usage of your cloud resources and protects from any unsolicited access to your account.<br>Refer to <a target="_blank" rel="noopener" href="https://www.alibabacloud.com/product/ram">Resource Access Management</a>.</p>
+<p><code>RAM</code> supports SAML 2.0-based <strong>single sign-on (SSO)</strong>, which is known as identity federation.<br><img src="ram_sso_user.png"></p>
+<blockquote>
+<p><code>RAM</code> and <code>RAM SSO</code> is used within one Alibaba Cloud account.</p>
+</blockquote>
+<h3 id="Relationship-between-RAM-and-CloudSSO"><a href="#Relationship-between-RAM-and-CloudSSO" class="headerlink" title="Relationship between RAM and CloudSSO"></a>Relationship between <code>RAM</code> and <code>CloudSSO</code></h3><table>
+<thead>
+<tr>
+<th>Comparison</th>
+<th>RAM</th>
+<th>CloudSSO</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Account type</td>
+<td>one account</td>
+<td>multi-account</td>
+</tr>
+<tr>
+<td>Management target</td>
+<td>resources</td>
+<td>account</td>
+</tr>
+</tbody></table>
+<ul>
+<li><code>CloudSSO</code> is integrated with Resource Directory and allows you to manage identities and permissions for multiple Alibaba Cloud accounts in a centralized manner. </li>
+<li><code>Resource Access Management (RAM)</code> allows you to manage identities and permissions within one Alibaba Cloud account.</li>
+<li>If you use <code>CloudSSO</code> to manage identities and permissions for the accounts in your resource directory in a centralized manner, you do not need to use RAM to manage permissions within one Alibaba Cloud account.</li>
+</ul>
+<p>Refer to <a target="_blank" rel="noopener" href="https://www.alibabacloud.com/help/doc-detail/265930.htm">Relationship between CloudSSO and RAM</a>.</p>
+<h3 id="Comparison-with-other-Public-Cloud-Vendors"><a href="#Comparison-with-other-Public-Cloud-Vendors" class="headerlink" title="Comparison with other Public Cloud Vendors"></a>Comparison with other Public Cloud Vendors</h3><h4 id="Azure-Management-Group-and-Subscriptions"><a href="#Azure-Management-Group-and-Subscriptions" class="headerlink" title="Azure Management Group and Subscriptions"></a>Azure Management Group and Subscriptions</h4><ul>
+<li>Management groups are a tool to help you structure your cloud environments for organization and governance at scale.</li>
+<li>Subscriptions are a unit of management, billing, and scale within Azure. </li>
+</ul>
+<p><img src="azure_management_groups.png"></p>
+<p>When you migrate accounts from Azure. Alibaba <code>Member</code> accounts can be treated as Azure <code>Subscription</code> which is the basic unit of management, all cloud resources are directly managed by <code>Member</code> accounts.<br>Alibaba <code>Folder</code> can be treated as Azure <code>Management Group</code> which is designed for organization and governance.</p>
+<h4 id="AWS-Organization-and-Landing-Zone"><a href="#AWS-Organization-and-Landing-Zone" class="headerlink" title="AWS Organization and Landing Zone"></a>AWS Organization and Landing Zone</h4><ul>
+<li>AWS Organizations is an account management service that enables you to consolidate multiple AWS accounts into an organization that you create and centrally manage. </li>
+<li>The AWS Landing Zone is deployed into an AWS Organizations account. This account is used to manage configuration and access to AWS Landing Zone managed accounts. </li>
+</ul>
+<p><img src="aws_organization.png"></p>
+<p>When you migrate accounts from AWS. Alibaba <code>Member</code> accounts can be treated as AWS <code>Member Account</code>. Alibaba <code>Folder</code> can be treated as Azure <code>Organization Unit</code>.</p>
+<h1 id="How-to-set-up-CloudSSO"><a href="#How-to-set-up-CloudSSO" class="headerlink" title="How to set up CloudSSO"></a>How to set up CloudSSO</h1><p><img src="sso.jpg"></p>
+<h2 id="Login-Alibaba-Cloud-portal"><a href="#Login-Alibaba-Cloud-portal" class="headerlink" title="Login Alibaba Cloud portal"></a>Login Alibaba Cloud portal</h2><p>As above chart, you have several different ways to access Alibaba Cloud portal.</p>
+<ul>
+<li>RAM User logon: login to root account by <code>RAM</code> users for managing <code>Folders</code> and <code>Members</code>.</li>
+<li>RAM IdP logon: login with an external IdP(e.g. enterprise IdPs) to root account by RAM user for managing <code>Folders</code> and <code>Members</code>.</li>
+<li>CloudSSO logon: login to sub member account by <code>CloudSSO</code> users for managing resources on cloud.</li>
+<li>CloudSSO IdP logon: login with an external IdP(e.g. enterprise IdPs) to sub member accounts by <code>CloudSSO</code> users for managing resources on cloud.</li>
+</ul>
+<h2 id="Target"><a href="#Target" class="headerlink" title="Target"></a>Target</h2><p>As above chart, following components will be created or setup.</p>
+<ul>
+<li>Create multi member accounts in an enterprise account on Alibaba Cloud.</li>
+<li>Setup <code>CloudSSO</code> for enterprise users logon.</li>
+<li>Setup an enterprise <code>IdP</code>  for logon.</li>
+<li>Define policy for enterprise users to access member accounts. (e.g. <code>AdministratorAccess</code> for users in group <code>alibabassoadmin</code>)</li>
+</ul>
+<h2 id="Requirements"><a href="#Requirements" class="headerlink" title="Requirements"></a>Requirements</h2><ul>
+<li>Alibaba Cloud <code>Enterprise Account</code> is required for <code>CloudSSO</code> and <code>Resource Directory</code>.</li>
+<li>An IdP, e.g. Azure AD IdP, Google or Github. </li>
+</ul>
+<h2 id="Step-1-Overview-CloudSSO"><a href="#Step-1-Overview-CloudSSO" class="headerlink" title="Step 1: Overview CloudSSO"></a>Step 1: Overview CloudSSO</h2><p>Open <code>CloudSSO</code> portal in Alibaba Cloud. According to your user location, you can create a <code>CloudSSO</code> service near to users.<br>For this demo, Shanghai endpoint will be used. You can get the enterprise entry from <code>User Logon URL</code>,<br>this url will be used for Alibaba Cloud logon.<br><img src="cloudsso_overview.png"></p>
+<blockquote>
+<p><code>CloudSSO</code> logon url is different with normal logon and <code>RAM</code> logon.</p>
+</blockquote>
+<h2 id="Step-2-Set-up-IdP-in-CloudSSO"><a href="#Step-2-Set-up-IdP-in-CloudSSO" class="headerlink" title="Step 2: Set up IdP in CloudSSO"></a>Step 2: Set up IdP in CloudSSO</h2><h3 id="Download-SP-meta-from-CloudSSO"><a href="#Download-SP-meta-from-CloudSSO" class="headerlink" title="Download SP meta from CloudSSO"></a>Download SP meta from CloudSSO</h3><p>In <code>Settings</code>, you can download a meta file about CloudSSO SP.<br>This file can be used in IdP vendor to save time for setting client.<br><img src="cloudsso_setting_idp.png"></p>
+<h3 id="Upload-IdP-information"><a href="#Upload-IdP-information" class="headerlink" title="Upload IdP information"></a>Upload IdP information</h3><p>You can download IdP meta file and then upload to <code>CloudSSO</code>.<br><code>CloudSSO</code> can retrieve required information and update config.<br>You can also modify config manually.<br><img src="cloudsso_setting_idp_meta.png"></p>
+<h2 id="Step-3-Azure-IdP-Setup"><a href="#Step-3-Azure-IdP-Setup" class="headerlink" title="Step 3: Azure IdP Setup"></a>Step 3: Azure IdP Setup</h2><p>Please follow <a target="_blank" rel="noopener" href="https://www.alibabacloud.com/help/doc-detail/268086.htm?spm=a2c63.p38356.879954.5.2e307b1escYdR4">CloudSSO logon from Azure AD</a><br>to complete Azure IdP setup.<br>Finally, you can download <code>Federation Metadata XML</code> and use it for setting in <code>Step 2</code>.<br><img src="cloudsso_azure.png"></p>
+<h2 id="Step-4-Access-Management"><a href="#Step-4-Access-Management" class="headerlink" title="Step 4: Access Management"></a>Step 4: Access Management</h2><p>For access management of <code>CloudSSO</code> enterprise users, you need to define templates <code>Access Configuration</code> in <code>Access Management</code>.<br><img src="cloudsso_ac_management.png"><br><img src="cloudsso_ac_policy.png"><br><img src="cloudsso_ac_create.png"><br><img src="cloudsso_ac_policy_bind.png"></p>
+<h2 id="Multi-account-Permission-Configuration"><a href="#Multi-account-Permission-Configuration" class="headerlink" title="Multi-account Permission Configuration"></a>Multi-account Permission Configuration</h2><p>Once <code>Access Configuration</code> template is defined, you can bind it with groups.<br><strong>Group based mapping</strong><br><img src="cloudsso_ac_group.png"><br><img src="cloudsso_ac_config.png"></p>
+<p>You can also manually bind <code>Access Configuration</code> template with given users.<br><strong>Assignment</strong><br><img src="cloudsso_ac.png"></p>
+<h2 id="SCIM"><a href="#SCIM" class="headerlink" title="SCIM"></a>SCIM</h2><p>System for Cross-domain Identity Management (SCIM) is a standard for automating the exchange of user identity information between identity domains, or IT systems.<br>Refer to <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/System_for_Cross-domain_Identity_Management">SCIM</a></p>
+<p>CloudSSO need to sync users before login. You can setup it in <code>SCIM</code> configuration.<br><img src="cloudsso_scim.png"></p>
+<h2 id="Successful-login"><a href="#Successful-login" class="headerlink" title="Successful login"></a>Successful login</h2><p><img src="cloudsso_login.png"><br><img src="cloudsso_portal.png"><br>Once successful login, you can choose a member account to do further operation on cloud resources, e.g. ECS creation.</p>
+<h2 id="Resource-Directory"><a href="#Resource-Directory" class="headerlink" title="Resource Directory"></a>Resource Directory</h2><p>In the <code>Resource Directory</code> page, administrators of root account can check overall <code>Folders</code> structure.<br><img src="resource_directory_setting.png"><br><img src="resource_directory_org.png"><br><img src="resource_directory_subfolder.png"></p>
+<h3 id="Resource-Member"><a href="#Resource-Member" class="headerlink" title="Resource Member"></a>Resource Member</h3><p>In the <code>Resource Member</code> page, administrators of root account can view all <code>Members</code> accounts.<br><img src="resource_directory_mem.png"></p>
+<h3 id="Control-Policy"><a href="#Control-Policy" class="headerlink" title="Control Policy"></a>Control Policy</h3><p>In the <code>Policy </code> page, administrators of root account can view all <code>Policy</code> which can be assigned to users or groups.<br><img src="resource_directory_policy.png"></p>
+<h1 id="References"><a href="#References" class="headerlink" title="References"></a>References</h1><ul>
+<li><a target="_blank" rel="noopener" href="https://resource.alibabacloud.com/bestpractice/detail.html?spm=5176.12540242.0.0.ec036e1346HTd6&bpId=2020103018544900001">Resource Management</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.alibabacloud.com/help/doc-detail/268086.htm?spm=a2c63.p38356.879954.5.2e307b1escYdR4">CloudSSO logon from Azure AD</a></li>
+<li><a target="_blank" rel="noopener" href="https://docs.microsoft.com/en-us/azure/governance/management-groups/overview">Azure management groups</a></li>
+<li><a target="_blank" rel="noopener" href="https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/design-area/resource-org-subscriptions">Azure resource organization</a></li>
+</ul>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="mailto:undefined">Cheng Zhang</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="https://blog.mucdata.com/2022/02/08/cloudsso/">https://blog.mucdata.com/2022/02/08/cloudsso/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/SSO/">SSO</a><a class="post-meta__tags" href="/tags/IdP/">IdP</a></div><div class="post_share"><div class="social-share" data-image="/img/default_bg.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button button--animated"><i class="fas fa-qrcode"></i> Donate</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/img/wechat.jpg" target="_blank"><img class="post-qr-code-img" src="/img/wechat.jpg" alt="Wechat Pay"/></a><div class="post-qr-code-desc">Wechat Pay</div></li><li class="reward-item"><a href="/img/alipay.jpg" target="_blank"><img class="post-qr-code-img" src="/img/alipay.jpg" alt="Alipay"/></a><div class="post-qr-code-desc">Alipay</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2022/02/07/ga/"><img class="next-cover" src="/img/default_bg.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">Global Accelerator Solution</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> Comment</span></div></div><div class="comment-wrap"><div><div id="disqus_thread"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Cheng Zhang</div><div class="author-info__description"></div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">5</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">Tags</div><div class="length-num">12</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">Categories</div><div class="length-num">4</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/zchome/"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://www.linkedin.com/in/zchome/" target="_blank" title="Linkedin"><i class="fab fa-linkedin"></i></a><a class="social-icon" href="https://github.com/zchome/" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:cheng.zhang@mucdata.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>Announcement</span></div><div class="announcement_content">This is a Cloud Architecture Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Catalog</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#CloudSSO-simplify-users-management-of-multiple-cloud-accounts-for-enterprise"><span class="toc-number">1.</span> <span class="toc-text">CloudSSO simplify users management of multiple cloud accounts for enterprise</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Why-CloudSSO"><span class="toc-number">2.</span> <span class="toc-text">Why CloudSSO</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#What-is-CloudSSO"><span class="toc-number">3.</span> <span class="toc-text">What is CloudSSO</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Resource-Management"><span class="toc-number">3.1.</span> <span class="toc-text">Resource Management</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Terraform"><span class="toc-number">3.1.1.</span> <span class="toc-text">Terraform</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#What-is-Resource-Access-Management-RAM"><span class="toc-number">3.2.</span> <span class="toc-text">What is Resource Access Management(RAM)</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Relationship-between-RAM-and-CloudSSO"><span class="toc-number">3.2.1.</span> <span class="toc-text">Relationship between RAM and CloudSSO</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Comparison-with-other-Public-Cloud-Vendors"><span class="toc-number">3.2.2.</span> <span class="toc-text">Comparison with other Public Cloud Vendors</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Azure-Management-Group-and-Subscriptions"><span class="toc-number">3.2.2.1.</span> <span class="toc-text">Azure Management Group and Subscriptions</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#AWS-Organization-and-Landing-Zone"><span class="toc-number">3.2.2.2.</span> <span class="toc-text">AWS Organization and Landing Zone</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#How-to-set-up-CloudSSO"><span class="toc-number">4.</span> <span class="toc-text">How to set up CloudSSO</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Login-Alibaba-Cloud-portal"><span class="toc-number">4.1.</span> <span class="toc-text">Login Alibaba Cloud portal</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Target"><span class="toc-number">4.2.</span> <span class="toc-text">Target</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Requirements"><span class="toc-number">4.3.</span> <span class="toc-text">Requirements</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Step-1-Overview-CloudSSO"><span class="toc-number">4.4.</span> <span class="toc-text">Step 1: Overview CloudSSO</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Step-2-Set-up-IdP-in-CloudSSO"><span class="toc-number">4.5.</span> <span class="toc-text">Step 2: Set up IdP in CloudSSO</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Download-SP-meta-from-CloudSSO"><span class="toc-number">4.5.1.</span> <span class="toc-text">Download SP meta from CloudSSO</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Upload-IdP-information"><span class="toc-number">4.5.2.</span> <span class="toc-text">Upload IdP information</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Step-3-Azure-IdP-Setup"><span class="toc-number">4.6.</span> <span class="toc-text">Step 3: Azure IdP Setup</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Step-4-Access-Management"><span class="toc-number">4.7.</span> <span class="toc-text">Step 4: Access Management</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Multi-account-Permission-Configuration"><span class="toc-number">4.8.</span> <span class="toc-text">Multi-account Permission Configuration</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#SCIM"><span class="toc-number">4.9.</span> <span class="toc-text">SCIM</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Successful-login"><span class="toc-number">4.10.</span> <span class="toc-text">Successful login</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Resource-Directory"><span class="toc-number">4.11.</span> <span class="toc-text">Resource Directory</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Resource-Member"><span class="toc-number">4.11.1.</span> <span class="toc-text">Resource Member</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Control-Policy"><span class="toc-number">4.11.2.</span> <span class="toc-text">Control Policy</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#References"><span class="toc-number">5.</span> <span class="toc-text">References</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/02/08/cloudsso/" title="Multiple Accounts with CloudSSO Solution"><img src="/img/default_bg.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Multiple Accounts with CloudSSO Solution"/></a><div class="content"><a class="title" href="/2022/02/08/cloudsso/" title="Multiple Accounts with CloudSSO Solution">Multiple Accounts with CloudSSO Solution</a><time datetime="2022-02-08T18:00:00.000Z" title="Created 2022-02-08 19:00:00">2022-02-08</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/02/07/ga/" title="Global Accelerator Solution"><img src="/img/default_bg.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Global Accelerator Solution"/></a><div class="content"><a class="title" href="/2022/02/07/ga/" title="Global Accelerator Solution">Global Accelerator Solution</a><time datetime="2022-02-07T17:00:00.000Z" title="Created 2022-02-07 18:00:00">2022-02-07</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/10/22/idaas/" title="Alibaba Cloud IDaaS"><img src="/img/default_bg.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Alibaba Cloud IDaaS"/></a><div class="content"><a class="title" href="/2021/10/22/idaas/" title="Alibaba Cloud IDaaS">Alibaba Cloud IDaaS</a><time datetime="2021-10-22T13:00:00.000Z" title="Created 2021-10-22 15:00:00">2021-10-22</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/10/22/mpaas/" title="Alibaba Cloud mPaaS"><img src="/img/default_bg.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Alibaba Cloud mPaaS"/></a><div class="content"><a class="title" href="/2021/10/22/mpaas/" title="Alibaba Cloud mPaaS">Alibaba Cloud mPaaS</a><time datetime="2021-10-22T13:00:00.000Z" title="Created 2021-10-22 15:00:00">2021-10-22</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/10/22/sso/" title="SSO Solution"><img src="/img/default_bg.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="SSO Solution"/></a><div class="content"><a class="title" href="/2021/10/22/sso/" title="SSO Solution">SSO Solution</a><time datetime="2021-10-22T07:00:00.000Z" title="Created 2021-10-22 09:00:00">2021-10-22</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By Cheng Zhang</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="Scroll To Comments"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"><script>function loadDisqus () {
+  var disqus_config = function () {
+    this.page.url = 'https://blog.mucdata.com/2022/02/08/cloudsso/'
+    this.page.identifier = '2022/02/08/cloudsso/'
+    this.page.title = 'Multiple Accounts with CloudSSO Solution'
+  };
+
+  window.disqusReset = () => {
+    DISQUS.reset({
+      reload: true,
+      config: disqus_config
+    })
+  }
+
+  if (window.DISQUS) disqusReset()
+  else {
+    (function() { 
+      var d = document, s = d.createElement('script');
+      s.src = 'https://zchome.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  }
+}
+
+if ('Disqus' === 'Disqus' || !false) {
+  if (false) btf.loadComment(document.getElementById('disqus_thread'), loadDisqus)
+  else loadDisqus()
+} else {
+  function loadOtherComment () {
+    loadDisqus()
+  }
+}
+</script></div></div></body></html>
